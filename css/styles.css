@@ -12,7 +12,7 @@ ul{list-style: none;}
 header{
   position: relative;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items:flex-start
   justify-content: center;
   height: 80px
@@ -23,7 +23,7 @@ header{
   font-size: 26px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   padding-left: 5%;
 }
 .logo a{
@@ -42,6 +42,7 @@ header{
 .menu > nav ul{
   display: flex;
   flex-direction: row;
+  margin-left: 93px;
 }
 .menu > nav ul li{
   font-weight: 500;
@@ -58,7 +59,22 @@ header{
   color: #2196F3;
 }
 .info{
-  display: none;
+  display: flex;
+  align-items: center;
+  margin-left: 30%;
+}
+.info ul{
+  display: flex;
+  flex-direction: row;
+}
+.info ul a{
+  margin-right: 50px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #757575;
+}
+.info ul a:hover{
+  color: #2196F3;
 }
 main {
   display: flex;
@@ -67,6 +83,7 @@ main {
 .background{
   display: flex;
   flex-direction: column;
+  justify-content: center;
   background: #2F303A;
   height: 600px;
 }
@@ -78,7 +95,6 @@ main  .tittle{
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-top: 200px;
 }
 main .button{
   width: 261px;
@@ -90,6 +106,43 @@ main .button{
   border: #2196F3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+}
+main #characterist{
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-top: 95px;
+}
+main #characterist ul {
+  display: flex;
+  flex-direction: row;
+}
+main #characterist ul .box{
+  margin: 15px;
+}
+main #characterist h3{
+  font-size: 14px;
+  font-weight: 700;
+  color: #212121;
+}
+main #characterist p{
+  font-size: 14px;
+  font-weight: 400;
+  color: #757575;
+  text-align: start;
+}
+main #company{
+  font-size: 36px;
+  font-weight: 700;
+  color: #212121;
+}
+main #company img{
+  width: 373px;
+  height: 323px;
+  margin: 23px;
+}
+main #company .us ul{
+  display: flex;
+  flex-direction: row;
 }
 footer{
   position: relative;
