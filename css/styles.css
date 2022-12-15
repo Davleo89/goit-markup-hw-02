@@ -1,152 +1,144 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600;700&family=Roboto:wght@100;300;400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600;700&family=Roboto:wght@100;300;400;500;700&display=swap");
 body {
-  font-family: 'Roboto';
-  font-weight: 300;
+  font-family: "Roboto", sans-serif;
+  line-height: 1em;
+  color: #212121;
   margin: 0;
+  width: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+/* Encabezado de la página*/
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  height: 60px;
+}
+
+header .logo a {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  color: #2196f3;
+}
+
+.menu,
+.info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.menu ul,
+.info ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.menu ul li a,
+.info ul li a {
+  color: #212121;
+}
+
+.menu ul li a:hover,
+.info ul li a:hover,
+.menu ul li a:active,
+.info ul li a:active {
+  color: #2196f3;
+}
+
+main {
   display: flex;
   flex-direction: column;
   text-align: center;
 }
-a{text-decoration: none;}
-ul{list-style: none;}
-header{
-  position: relative;
-  display: flex;
-  flex-direction: row;
-  align-items:flex-start
-  justify-content: center;
-  height: 80px
+
+/* Cuerpo de la página seccion de titulo*/
+#hero {
+  background: #2f303a;
+  max-height: max-content;
 }
-.logo{
-  font-family: 'Raleway';
+
+#hero .tittle {
+  margin: 150px;
+}
+
+#hero .tittle h1 {
   font-weight: 700;
-  font-size: 26px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  padding-left: 5%;
-}
-.logo a{
-  color: #2196F3;
-}
-.menu{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.menu > nav{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.menu > nav ul{
-  display: flex;
-  flex-direction: row;
-  margin-left: 93px;
-}
-.menu > nav ul li{
-  font-weight: 500;
-  font-size: 16px;
-}
-.menu > nav ul li a{
-  color: #212121;
-  margin: 15px;
-}
-.menu nav ul li a:hover{
-  color: #2196F3;
-}
-.menu > nav ul li a:active{
-  color: #2196F3;
-}
-.info{
-  display: flex;
-  align-items: center;
-  margin-left: 30%;
-}
-.info ul{
-  display: flex;
-  flex-direction: row;
-}
-.info ul a{
-  margin-right: 50px;
-  font-size: 14px;
-  font-weight: 500;
-  color: #757575;
-}
-.info ul a:hover{
-  color: #2196F3;
-}
-main {
-  display: flex;
-  flex-direction: column;
-}
-.background{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background: #2F303A;
-  height: 600px;
-}
-main  .tittle{
-  color: #FFFFFF;
-  font-weight: 900;
   font-size: 44px;
-  line-height: 60px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  line-height: 1em;
+  color: #ffffff;
+  cursor: default;
 }
-main .button{
+
+#hero .button {
   width: 261px;
   height: 50px;
   font-size: 16px;
   font-weight: 700;
-  color: #FFFFFF;
-  background: #2196F3;
-  border: #2196F3;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
+  color: #ffffff;
+  background-color: #2196f3;
+  border-color: #1491f7;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.45);
+  cursor: pointer;
 }
-main #characterist{
-  margin-left: 15%;
-  margin-right: 15%;
-  margin-top: 95px;
+
+#hero .button:hover {
+  border-color: #57acf1;
+  background-color: #1491f7;
 }
-main #characterist ul {
+
+/* Cuerpo de la pagina seccion de caracteristicas */
+#characterist ul {
   display: flex;
-  flex-direction: row;
-}
-main #characterist ul .box{
-  margin: 15px;
-}
-main #characterist h3{
-  font-size: 14px;
-  font-weight: 700;
-  color: #212121;
-}
-main #characterist p{
-  font-size: 14px;
-  font-weight: 400;
-  color: #757575;
-  text-align: start;
-}
-main #company{
-  font-size: 36px;
-  font-weight: 700;
-  color: #212121;
-}
-main #company img{
-  width: 373px;
-  height: 323px;
-  margin: 23px;
-}
-main #company .us ul{
-  display: flex;
-  flex-direction: row;
-}
-footer{
-  position: relative;
-  display: flex;
-  align-items: flex-end;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
+}
+#characterist ul .box {
+  margin: 20px;
+}
+
+@media (min-width: 820px) {
+  header {
+    margin: 0;
+    padding: 0;
+  }
+  .info ul {
+    margin-left: 50px;
+  }
+  .menu ul,
+  .info ul {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .menu ul li a,
+  .info ul li a {
+    margin: 15px;
+    padding-inline-start: 0;
+  }
+  #characterist ul {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 50px;
+  }
+  .box {
+    margin: 15px;
+  }
+  .box p {
+    text-align: start;
+  }
 }
