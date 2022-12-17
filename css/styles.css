@@ -18,13 +18,14 @@ li {
 /* Encabezado de la página*/
 header {
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
-  width: auto;
+  width: ;
   height: 60px;
 }
 
-header .logo a {
+.logo a{
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -33,9 +34,6 @@ header .logo a {
 
 .menu,
 .info {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   text-align: center;
   font-weight: 500;
   font-size: 14px;
@@ -44,12 +42,13 @@ header .logo a {
 .menu ul,
 .info ul {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
 }
 
 .menu ul li a,
 .info ul li a {
   color: #212121;
+  padding: 15px;
 }
 
 .menu ul li a:hover,
@@ -103,42 +102,100 @@ main {
 /* Cuerpo de la pagina seccion de caracteristicas */
 #characterist ul {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
+  align-items: flex-start;
   justify-content: center;
 }
+#characterist ul .box li p{
+  display: flex;
+  text-align: start;
+}
 #characterist ul .box {
+  width: 300px;
   margin: 20px;
 }
 
-@media (min-width: 820px) {
-  header {
-    margin: 0;
-    padding: 0;
-  }
-  .info ul {
-    margin-left: 50px;
-  }
-  .menu ul,
-  .info ul {
-    flex-direction: row;
-    justify-content: space-between;
-  }
-  .menu ul li a,
-  .info ul li a {
-    margin: 15px;
-    padding-inline-start: 0;
-  }
-  #characterist ul {
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    margin: 50px;
-  }
-  .box {
-    margin: 15px;
-  }
-  .box p {
-    text-align: start;
-  }
+/* Cuerpo de la página seccion de aque nos dedicamos*/
+#company{
+  position: relative;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 1em;
+}
+#company ul{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+#company ul li{
+  margin: 30px;
+}
+#company ul li img{
+  width: 373px;
+  height: 323px;
+}
+
+/* Cuerpo de la página seccion de nuestro equipo */
+#team h2{
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1em;
+}
+#team .boxes{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+#team .boxes .box-team{
+  display: flex;
+  align-items: center;
+  margin: 37px;
+  width: 270px;
+  height: 368px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+              0px 1px 1px rgba(0, 0, 0, 0.14),
+              0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+#team .boxes .box-team img{
+  font-weight: 500;
+  font-size: 16px;
+  border-radius: 15px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.12),
+              0px 5px 15px rgba(0, 0, 0, 0.14),
+              0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+#team .boxes .box-team li h3{
+  color: #212121;
+  line-height: 1em;
+}
+#team .boxes .box-team li p{
+  color: #757575;
+  line-height: 1em;
+}
+footer{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  background: #2F303A;
+  height: 252px;
+  margin-top: 60px;
+}
+footer .footer{
+  margin-left: 256px;
+}
+footer address ul{
+  padding-left: 0;
+}
+footer address ul li{
+  margin: 5px;
+}
+footer address ul li a{
+  color: #FFFFFF;
+}
+footer address ul li .dir{
+  color: rgba(255, 255, 255, 0.6);
 }
