@@ -25,7 +25,7 @@ header {
   height: 60px;
 }
 
-.logo a{
+.logo a {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -106,7 +106,7 @@ main {
   align-items: flex-start;
   justify-content: center;
 }
-#characterist ul .box li p{
+#characterist ul .box li p {
   display: flex;
   text-align: start;
 }
@@ -116,92 +116,88 @@ main {
 }
 
 /* Cuerpo de la página seccion de aque nos dedicamos*/
-#company{
+#company {
   position: relative;
   font-weight: 700;
   font-size: 30px;
   line-height: 1em;
 }
-#company ul{
+#company ul {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
 }
-#company ul li{
+#company ul li {
   margin: 30px;
 }
-#company ul li img{
+#company ul li img {
   width: 373px;
   height: 323px;
 }
 
 /* Cuerpo de la página seccion de nuestro equipo */
-#team h2{
+#team h2 {
   font-size: 30px;
   font-weight: 700;
   line-height: 1em;
 }
-#team .boxes{
+#team .boxes {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
 }
-#team .boxes .box-team{
+#team .boxes .box-team {
   display: flex;
   align-items: center;
   margin: 37px;
   width: 270px;
   height: 368px;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
-              0px 1px 1px rgba(0, 0, 0, 0.14),
-              0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-#team .boxes .box-team img{
+#team .boxes .box-team img {
   font-weight: 500;
   font-size: 16px;
   border-radius: 15px;
-  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.12),
-              0px 5px 15px rgba(0, 0, 0, 0.14),
-              0px 5px 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.12), 0px 5px 15px rgba(0, 0, 0, 0.14),
+    0px 5px 15px rgba(0, 0, 0, 0.2);
 }
-#team .boxes .box-team li h3{
+#team .boxes .box-team li h3 {
   color: #212121;
   line-height: 1em;
 }
-#team .boxes .box-team li p{
+#team .boxes .box-team li p {
   color: #757575;
   line-height: 1em;
 }
-footer{
+footer {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  background: #2F303A;
+  background: #2f303a;
   height: 252px;
   margin-top: 60px;
 }
-footer .footer{
+footer .footer {
   margin-left: 256px;
 }
-footer address ul{
+footer address ul {
   padding-left: 0;
 }
-footer address ul li{
+footer address ul li {
   margin: 5px;
 }
-footer address ul li a{
-  color: #FFFFFF;
+footer address ul li a {
+  color: #ffffff;
 }
-footer address ul li .dir{
+footer address ul li .dir {
   color: rgba(255, 255, 255, 0.6);
 }
 
 /*----------------------------------------------------------------*/
 
 /* Sección de portafolio */
-
-
