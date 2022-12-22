@@ -1,29 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600;700&family=Roboto:wght@100;300;400;500;700&display=swap");
 body {
   font-family: "Roboto", sans-serif;
-  line-height: 1em;
+  font-size: 14px;
+  letter-spacing: 0.03em;
   color: #212121;
-  margin: 0;
-  width: auto;
+  background-color: #ffffff;
 }
 
-a {
+.link{
   text-decoration: none;
-}
-
-li {
   list-style: none;
 }
 
 /* Encabezado de la página*/
-header {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  height: 60px;
-}
-
 .logo a {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -36,12 +25,6 @@ header {
   text-align: center;
   font-weight: 500;
   font-size: 14px;
-}
-
-.menu ul,
-.info ul {
-  display: flex;
-  flex-direction: row;
 }
 
 .menu ul li a,
@@ -57,23 +40,17 @@ header {
   color: #2196f3;
 }
 
-main {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-}
-
 /* Cuerpo de la página seccion de titulo*/
-#hero {
+.hero {
   background: #2f303a;
   max-height: max-content;
 }
 
-#hero .tittle {
+.hero .tittle {
   margin: 150px;
 }
 
-#hero .tittle h1 {
+.hero .tittle h1 {
   font-weight: 700;
   font-size: 44px;
   line-height: 1em;
@@ -81,7 +58,7 @@ main {
   cursor: default;
 }
 
-#hero .button {
+.hero .button {
   width: 261px;
   height: 50px;
   font-size: 16px;
@@ -93,63 +70,41 @@ main {
   cursor: pointer;
 }
 
-#hero .button:hover {
+.hero .button:hover {
   border-color: #57acf1;
   background-color: #1491f7;
 }
 
 /* Cuerpo de la pagina seccion de caracteristicas */
-#characterist ul {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: center;
-}
-#characterist ul .box li p {
-  display: flex;
-  text-align: start;
-}
-#characterist ul .box {
+.characterist ul .box {
   width: 300px;
   margin: 20px;
 }
 
 /* Cuerpo de la página seccion de aque nos dedicamos*/
-#company {
+.company {
   position: relative;
   font-weight: 700;
   font-size: 30px;
   line-height: 1em;
 }
-#company ul {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-}
-#company ul li {
+
+.company ul li {
   margin: 30px;
 }
-#company ul li img {
+.company ul li img {
   width: 373px;
   height: 323px;
 }
 
 /* Cuerpo de la página seccion de nuestro equipo */
-#team h2 {
+.team h2 {
   font-size: 30px;
   font-weight: 700;
   line-height: 1em;
 }
-#team .boxes {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-}
-#team .boxes .box-team {
-  display: flex;
-  align-items: center;
+
+.team .boxes .box-team {
   margin: 37px;
   width: 270px;
   height: 368px;
@@ -158,7 +113,7 @@ main {
               0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-#team .boxes .box-team img {
+.team .boxes .box-team img {
   font-weight: 500;
   font-size: 16px;
   border-radius: 15px;
@@ -166,21 +121,17 @@ main {
               0px 5px 15px rgba(0, 0, 0, 0.14),
               0px 5px 15px rgba(0, 0, 0, 0.2);
 }
-#team .boxes .box-team li h3 {
+.team .boxes .box-team li h3 {
   color: #212121;
   line-height: 1em;
 }
-#team .boxes .box-team li p {
+.team .boxes .box-team li p {
   color: #757575;
   line-height: 1em;
 }
 
 /* Seccion de pie de pagina*/
 footer {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
   background: #2f303a;
   height: 252px;
   margin-top: 60px;
@@ -207,10 +158,6 @@ footer address ul li .dir {
 
 /* Botones */
 .buttons ul {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
   margin-top: 45px;
 }
 
@@ -233,12 +180,6 @@ footer address ul li .dir {
 }
 
 /* Contenedor de imagenes */
-main .catalog{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-}
 main .catalog .box{
   margin: 37px;
   width: 400px;
