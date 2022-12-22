@@ -44,6 +44,7 @@ a, li{
 .hero {
   background: #2f303a;
   max-height: max-content;
+  height: 300px;
 }
 
 .hero .tittle {
