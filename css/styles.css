@@ -11,6 +11,9 @@ a, li{
   text-decoration: none;
   list-style: none;
 }
+.button{
+  cursor: pointer;
+}
 
 /* Encabezado de la página*/
 .logo a {
@@ -47,10 +50,6 @@ a, li{
   height: 300px;
 }
 
-.hero .tittle {
-  margin: 150px;
-}
-
 .hero .tittle h1 {
   font-weight: 700;
   font-size: 44px;
@@ -68,7 +67,6 @@ a, li{
   background-color: #2196f3;
   border-color: #1491f7;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.45);
-  cursor: pointer;
 }
 
 .hero .button:hover {
