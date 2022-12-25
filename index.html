@@ -7,23 +7,39 @@
     <title>WebStudio</title>
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="shortcut icon" href="./images/logo.png" type="image/png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600;700&family=Roboto:wght@100;300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
       <div class="logo">
-        <a href="./index.html">WebStudio</a>
+        <a class="link" href="./index.html">WebStudio</a>
       </div>
       <nav class="menu">
         <ul>
-          <li><a href="./index.html">Estudio</a></li>
-          <li><a href="./portfolio.html">Portafolio</a></li>
-          <li><a href="./contacto.html">Contacto</a></li>
+          <li class="list"><a class="link" href="./index.html">Estudio</a></li>
+          <li class="list">
+            <a class="link" href="./portfolio.html">Portafolio</a>
+          </li>
+          <li class="list">
+            <a class="link" href="./contacto.html">Contacto</a>
+          </li>
         </ul>
       </nav>
       <div class="info">
         <ul>
-          <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-          <li><a href="tel:+525555296000">+52 55 5529 6000</a></li>
+          <li class="list">
+            <a class="link" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+          <li class="list">
+            <a class="link" href="tel:+525555296000">+52 55 5529 6000</a>
+          </li>
         </ul>
       </div>
     </header>
@@ -32,7 +48,7 @@
         <div class="tittle">
           <h1>SOLUCIONES EFICACES PARA <br />SU NEGOCIO</h1>
           <div>
-            <button class="button" type="button">
+            <button class="button primary" type="button">
               Solicite nuestros servicios
             </button>
           </div>
@@ -42,7 +58,7 @@
         <h2 hidden>Caracteristicas</h2>
         <ul>
           <div class="box">
-            <li>
+            <li class="list">
               <h3>Atención a los detalles</h3>
               <p>
                 Nos adentramos en todos los detalles y procesos de su negocio,
@@ -51,7 +67,7 @@
             </li>
           </div>
           <div class="box">
-            <li>
+            <li class="list">
               <h3>Puntualidad</h3>
               <p>
                 Con nosotros, usted puede sentirse seguro y protegido. Un
@@ -61,7 +77,7 @@
             </li>
           </div>
           <div class="box">
-            <li>
+            <li class="list">
               <h3>Planificación</h3>
               <p>
                 Usted podrá observar y participar en cada fase del desarrollo y
@@ -70,7 +86,7 @@
             </li>
           </div>
           <div class="box">
-            <li>
+            <li class="list">
               <h3>Tecnología moderna</h3>
               <p>
                 Usamos herramientas innovadoras para resolver las tareas
@@ -84,9 +100,15 @@
         <div class="us">
           <h2>A que nos dedicámos</h2>
           <ul>
-            <li><img src="images/imagen1.jpg" alt="picture1" width="200" /></li>
-            <li><img src="images/imagen2.jpg" alt="picture2" width="200" /></li>
-            <li><img src="images/imagen3.jpg" alt="picture3" width="200" /></li>
+            <li class="list">
+              <img src="images/imagen1.jpg" alt="picture1" width="200" />
+            </li>
+            <li class="list">
+              <img src="images/imagen2.jpg" alt="picture2" width="200" />
+            </li>
+            <li class="list">
+              <img src="images/imagen3.jpg" alt="picture3" width="200" />
+            </li>
           </ul>
         </div>
       </section>
@@ -95,7 +117,7 @@
         <div class="boxes">
           <div class="box-team">
             <ul>
-              <li>
+              <li class="list">
                 <img src="images/imagen4.jpg" alt="Andres Cobo" width="200" />
                 <h3>Andres Cubo</h3>
                 <p>Diseñador de Productos</p>
@@ -104,7 +126,7 @@
           </div>
           <div class="box-team">
             <ul>
-              <li>
+              <li class="list">
                 <img
                   src="images/imagen5.jpg"
                   alt="Carla Palacios"
@@ -117,7 +139,7 @@
           </div>
           <div class="box-team">
             <ul>
-              <li>
+              <li class="list">
                 <img src="images/imagen6.jpg" alt="Mario Dorado" width="200" />
                 <h3>Mario Dorado</h3>
                 <p>Marketing</p>
@@ -126,7 +148,7 @@
           </div>
           <div class="box-team">
             <ul>
-              <li>
+              <li class="list">
                 <img
                   src="images/imagen7.jpg"
                   alt="Pablo Mijangos"
@@ -142,23 +164,25 @@
     </main>
     <footer>
       <div class="footer">
-        <div class="logo"> 
-          <a href="#">WebStudio</a>
+        <div class="logo">
+          <a class="link" href="#">WebStudio</a>
         </div>
         <address>
           <ul>
-            <li>
-              <a href="#"
+            <li class="list">
+              <a class="link" href="#"
                 >Calz. Ticomán 500, Ciudad de México,<br />CDMX, México</a
               >
             </li>
-            <li>
-              <a class="dir" href="mailto:info@devstudio.com"
+            <li class="list">
+              <a class="link" class="dir" href="mailto:info@devstudio.com"
                 >info@devstudio.com</a
               >
             </li>
-            <li>
-              <a class="dir" href="tel:+525555296000">+52 55 5529 6000</a>
+            <li class="list">
+              <a class="link" class="dir" href="tel:+525555296000"
+                >+52 55 5529 6000</a
+              >
             </li>
           </ul>
         </address>
