@@ -1,203 +1,133 @@
 :root{
-  --primary-text-color: #212121;
-  --primary-white-color: #ffffff; 
-  --color-button-principal: #2196f3;
-  --color-button-secundary: #f5f4fa;
+  --text-color: #212121;
+  --white-color: #ffffff; 
+  --color-blue: #2196f3;
+  --color-button-menu: #f5f4fa;
+  --color-paragraph: #757575;
+  --background-color: #2F303A;
 }
-body {
-  font-family: "Roboto", sans-serif;
+
+body{
+  font-family: 'Roboto', sans-serif;
   font-size: 14px;
-  font-weight: 700;
+  font-weight: 400;
   line-height: 1em;
   letter-spacing: 0.03em;
-  color: var(--primary-text-color);
-  background-color: var(--primary-white-color);
+  color: var(--text-color);
+  background-color: var(--white-color);
 }
 
-.link,
-.list {
+.link, .list, .logo{
   text-decoration: none;
   list-style: none;
-}
-.button {
-  cursor: pointer;
+  color: var(--text-color);
 }
 
-/* Encabezado de la página*/
-.logo a {
-  font-family: "Raleway", sans-serif;
+.current{
+  color: var(--color-blue);
+}
+
+/* Cabecera */
+
+.logo{
+  font-family: 'Raleway', sans-serif;
   font-size: 26px;
+  font-weight: 700;
   line-height: 1.9em;
-  color: var(--color-button-principal);
+  color: var(--color-blue);
 }
-
-.menu,
-.info {
-  text-align: center;
+.link {
   font-weight: 500;
-  font-size: 14px;
 }
 
-.menu ul li a,
-.info ul li a {
-  color: var(--primary-text-color);
-  padding: 15px;
+.link:hover,
+.link:focus{
+color: var(--color-blue);
 }
 
-.menu ul li a:hover,
-.info ul li a:hover {
-  color: #2196f3;
+/* Sección de titulo */
+
+.hero{
+  background-color: var(--background-color);
 }
 
-/* Cuerpo de la página seccion de titulo*/
-.hero {
-  background: #2f303a;
-  max-height: max-content;
-  height: 300px;
-}
-
-.hero .tittle h1 {
+.hero-tittle{
+  font-weight: 900;
   font-size: 44px;
   line-height: 1em;
-  color: var(--primary-white-color);
-  cursor: default;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--white-color);
 }
 
-.hero .button {
+.hero-button{
   width: 261px;
   height: 50px;
+  background: var(--color-blue);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border-color: #67a1d1;
+  color: var(--white-color);
   font-size: 16px;
-  color: var(--primary-white-color);
-  background-color: var(--color-button-principal);
-  border-color: #1491f7;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.45);
+  font-weight: 700;
 }
 
-.hero .button:hover {
-  border-color: #57acf1;
-  background-color: #1491f7;
+/* Cuerpo de la página */
+
+.list-paragraph{
+  color: var(--color-paragraph);
 }
 
-/* Cuerpo de la pagina seccion de caracteristicas */
-.characterist ul .box {
-  width: 300px;
-  margin: 20px;
-}
-.characterist .box .list p{
-  font-weight: 400;
-  color: #757575;
+.company, .us-team{
+  font-size: 36px;
+  font-weight: 700;
+  text-align: center;
 }
 
-/* Cuerpo de la página seccion de aque nos dedicamos*/
-.company {
-  font-size: 30px;
-}
-
-.company ul li {
-  margin: 30px;
-}
-.company ul li img {
+.list-company{
   width: 373px;
   height: 323px;
 }
 
-/* Cuerpo de la página seccion de nuestro equipo */
-.team h2 {
-  font-size: 30px;
-}
-
-.team .boxes .box-team {
-  margin: 37px;
-  width: 270px;
-  height: 368px;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 
-              0px 1px 1px rgba(0, 0, 0, 0.14),
-              0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
-}
-.team .boxes .box-team img {
+.team-name{
   font-weight: 500;
-  font-size: 16px;
-  border-radius: 15px;
-  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.12), 
-              0px 5px 15px rgba(0, 0, 0, 0.14),
-              0px 5px 15px rgba(0, 0, 0, 0.2);
-}
-.team .boxes .box-team li h3 {
-  color: #212121;
-  line-height: 1em;
-}
-.team .boxes .box-team li p {
-  color: #757575;
-  line-height: 1em;
 }
 
-/* Seccion de pie de pagina*/
-footer {
-  background: #2f303a;
-  height: 252px;
-}
-footer address ul {
-  padding-left: 0;
-}
-footer address ul li {
-  margin: 5px;
-}
-footer address ul li a {
-  color: var(--primary-white-color);
-}
-footer address ul li .dir {
-  color: rgba(255, 255, 255, 0.6);
+/* Pie de pagina */
+
+.footer{
+  background: var(--background-color);
 }
 
-/*----------------------------------------------------------------*/
-
-/* Sección de portafolio */
-
-/* Botones */
-.buttons ul {
-  margin-top: 45px;
+.footer .link{
+  color: var(--white-color);
 }
 
-.buttons .button {
-  width: auto;
-  height: 38px;
-  margin: 8px;
-  font-family: "Roboto";
-  font-size: 16px;
+.contact .link{
+  color: var(--color-paragraph);
+}
+
+.footer .link:hover,
+.footer .link:focus{
+  color: var(--color-blue);
+}
+
+/* PORTAFOLIO */
+/* Cuerpo de la pagina */
+
+.btn{
   font-weight: 500;
-  color: #212121;
-  background-color: var(--color-button-secundary);
-  border-color: #f5f4fa;
+  color: var(--text-color);
+  text-align: center;
+  background-color: var(--color-button-menu);
+  border-radius: 4px;
+  border-color: #cccccc;
 }
 
-.buttons .button:hover {
-  border-color: #57acf1;
-  background-color: #2196f3;
-  color: #ffffff;
+.btn:hover,
+.btn:focus{
+  background-color: var(--color-blue);
+  color: var(--white-color);
 }
 
-/* Contenedor de imagenes */
-main .catalog .box {
-  margin: 37px;
-  width: 400px;
-  height: auto;
-  box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.12), 
-              0px 1px 5px rgba(0, 0, 0, 0.14),
-              0px 2px 5px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
-}
-main .catalog ul {
-  padding-left: 0;
-}
 
-main .catalog .box img {
-  width: 370px;
-  padding-top: 37px;
-}
-
-main .catalog .box h3,
-p {
-  text-align: start;
-  margin-left: 17px;
-}
