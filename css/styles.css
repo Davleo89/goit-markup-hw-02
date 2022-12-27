@@ -162,8 +162,7 @@ color: var(--color-blue);
   border-style: none;
 }
 
-.btn:hover,
-.btn:focus{
+.btn:hover{
   background-color: var(--color-blue);
   color: var(--white-color);
 }
