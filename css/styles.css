@@ -70,11 +70,16 @@ color: var(--color-blue);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border-color: #67a1d1;
+  border: none;
   color: var(--white-color);
   font-size: 16px;
   font-weight: 700;
   line-height: 1.8;
   text-align: center;
+}
+
+.hero-button:hover{
+  border: 1px solid var(--color-blue);
 }
 
 /* Cuerpo de la página */
