@@ -1,62 +1,69 @@
-:root{
+:root {
   --text-color: #212121;
-  --white-color: #ffffff; 
+  --white-color: #ffffff;
   --color-blue: #2196f3;
   --color-button-menu: #f5f4fa;
   --color-paragraph: #757575;
-  --background-color: #2F303A;
+  --background-color: #2f303a;
 }
 
-body{
-  font-family: 'Roboto', sans-serif;
+body {
+  font-family: "Roboto", sans-serif;
   font-size: 14px;
   letter-spacing: 0.03;
   color: var(--text-color);
   background-color: var(--white-color);
 }
 
-.link, .link-contact, .list, .logo, .list-portfolio{
+.link,
+.link-contact,
+.list,
+.logo,
+.list-portfolio {
   text-decoration: none;
   list-style: none;
   color: var(--text-color);
 }
 
-.current{
+.current {
   color: var(--color-blue);
 }
 
 /* Cabecera */
 
-.logo{
-  font-family: 'Raleway', sans-serif;
+.logo {
+  font-family: "Raleway", sans-serif;
   font-size: 26px;
   font-weight: 700;
   line-height: 1.9;
   color: var(--color-blue);
 }
 
-.link, .link-contact {
+.link,
+.link-contact {
   font-weight: 500;
   line-height: 1;
   letter-spacing: 0.02;
 }
 
-.link-contact{
+.link-contact {
   color: var(--color-paragraph);
 }
 
-.link:hover, .link-contact:hover,
-.link:focus, .link-contact:focus{
-color: var(--color-blue);
+.link:hover,
+.link-contact:hover,
+.link:focus,
+.link-contact:focus {
+  color: var(--color-blue);
 }
 
 /* Sección de titulo */
 
-.hero{
+.hero {
   background-color: var(--background-color);
 }
 
-.hero-tittle{
+.hero-tittle {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.9;
@@ -65,7 +72,7 @@ color: var(--color-blue);
   color: var(--white-color);
 }
 
-.hero-button{
+.hero-button {
   background: var(--color-blue);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -79,77 +86,76 @@ color: var(--color-blue);
   cursor: pointer;
 }
 
-.hero-button:hover{
+.hero-button:hover {
   border: 1px solid var(--color-blue);
 }
 
 /* Cuerpo de la página */
 
-.list-tittle{
+.list-tittle {
   font-weight: 700;
   line-height: 1;
 }
 
-.list-paragraph{
+.list-paragraph {
   font-weight: 400;
   line-height: 1.5;
   color: var(--color-paragraph);
 }
 
-.subtittle{
+.subtittle {
   font-weight: 700;
   font-size: 36px;
   line-height: 2.6;
   text-align: center;
 }
 
-.list-img{
+.list-img {
   width: 373.16px;
   height: 323.7px;
 }
 
-.box-team{
+.box-team {
   width: 270px;
   height: 368px;
   background: var(--white-color);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 
-              0px 1px 1px rgba(0, 0, 0, 0.14), 
-              0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   padding-left: 0;
 }
 
-.team-list{
+.team-list {
   width: 270px;
   height: 260px;
 }
 
-.team-name{
+.team-name {
   font-weight: 500;
   line-height: 1.18;
   text-align: center;
 }
 
-.box-team .list .list-paragraph{
+.box-team .list .list-paragraph {
   text-align: center;
 }
 
 /* Pie de pagina */
 
-.footer{
+.footer {
   background: var(--background-color);
 }
 
-.footer .link{
+.footer .link {
   color: var(--white-color);
 }
 
-.contact .link{
+.contact .link {
   color: var(--color-paragraph);
 }
 
 .footer .link:hover,
-.footer .link:focus{
+.footer .link:focus {
   color: var(--color-blue);
 }
 
@@ -157,8 +163,8 @@ color: var(--color-blue);
 /* Cuerpo de la pagina */
 
 /* Botones */
-.btn{
-  font-family: 'Roboto';
+.btn {
+  font-family: "Roboto";
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -170,37 +176,35 @@ color: var(--color-blue);
   cursor: pointer;
 }
 
-.btn:hover{
+.btn:hover {
   background-color: var(--color-blue);
   color: var(--white-color);
 }
 
 /* galeria del portafolio */
 
-.list-portfolio{
+.list-portfolio {
   width: 370px;
-  height: 404px; 
-  border: 1px solid #EEEEEE;
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
-              0px 4px 4px rgba(0, 0, 0, 0.06), 
-              1px 4px 6px rgba(0, 0, 0, 0.16); 
+  height: 404px;
+  border: 1px solid #eeeeee;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
   margin-top: 10px;
 }
 
-.img-list{
+.img-list {
   width: 370px;
   height: 294px;
 }
 
-.list-portfolio .list-tittle{
+.list-portfolio .list-tittle {
   font-weight: 700;
   font-size: 18px;
   line-height: 2.25;
   letter-spacing: 0.06em;
 }
 
-.list-portfolio .list-paragraph{
+.list-portfolio .list-paragraph {
   font-weight: 400;
   line-height: 1.87;
 }
-
