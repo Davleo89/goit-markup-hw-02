@@ -10,7 +10,7 @@
 body {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
-  letter-spacing: 0.03;
+  letter-spacing: 0.03em;
   color: var(--text-color);
   background-color: var(--white-color);
 }
@@ -35,15 +35,15 @@ body {
   font-family: "Raleway", sans-serif;
   font-size: 26px;
   font-weight: 700;
-  line-height: 1.9;
+  line-height: 1.19;
   color: var(--color-blue);
 }
 
 .link,
 .link-contact {
   font-weight: 500;
-  line-height: 1;
-  letter-spacing: 0.02;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
 }
 
 .link-contact {
@@ -61,14 +61,14 @@ body {
 
 .hero {
   background-color: var(--background-color);
+  text-align: center;
 }
 
 .hero-tittle {
   font-weight: 900;
   font-size: 44px;
-  line-height: 1.9;
-  text-align: center;
-  letter-spacing: 0.06;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
   color: var(--white-color);
 }
 
@@ -82,7 +82,6 @@ body {
   font-size: 16px;
   font-weight: 700;
   line-height: 1.8;
-  text-align: center;
   cursor: pointer;
 }
 
@@ -94,40 +93,31 @@ body {
 
 .list-tittle {
   font-weight: 700;
-  line-height: 1;
+  line-height: 1.14;
 }
 
 .list-paragraph {
   font-weight: 400;
-  line-height: 1.5;
+  line-height: 1.7;
   color: var(--color-paragraph);
 }
 
 .subtittle {
   font-weight: 700;
   font-size: 36px;
-  line-height: 2.6;
+  line-height: 1.16;
   text-align: center;
-}
-
-.list-img {
-  width: 373.16px;
-  height: 323.7px;
 }
 
 .box-team {
   width: 270px;
   height: 368px;
   background: var(--white-color);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 
+              0px 1px 1px rgba(0, 0, 0, 0.14),
+              0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   padding-left: 0;
-}
-
-.team-list {
-  width: 270px;
-  height: 260px;
 }
 
 .team-name {
@@ -148,14 +138,20 @@ body {
 
 .footer .link {
   color: var(--white-color);
+  font-style: normal;
+  font-weight: 400;
 }
 
-.contact .link {
+.footer .link-contact {
   color: var(--color-paragraph);
+  font-style: normal;
+  font-weight: 400;
 }
 
 .footer .link:hover,
-.footer .link:focus {
+.footer .link:focus,
+.footer .link-contact:hover,
+.footer .link-contact:focus {
   color: var(--color-blue);
 }
 
@@ -187,24 +183,21 @@ body {
   width: 370px;
   height: 404px;
   border: 1px solid #eeeeee;
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 
+              0px 4px 4px rgba(0, 0, 0, 0.06),
+              1px 4px 6px rgba(0, 0, 0, 0.16);
   margin-top: 10px;
-}
-
-.img-list {
-  width: 370px;
-  height: 294px;
 }
 
 .list-portfolio .list-tittle {
   font-weight: 700;
   font-size: 18px;
-  line-height: 2.25;
+  line-height: 2;
   letter-spacing: 0.06em;
 }
 
 .list-portfolio .list-paragraph {
   font-weight: 400;
+  font-size: 16px;
   line-height: 1.87;
 }
