@@ -191,7 +191,7 @@ body {
   cursor: pointer;
 }
 
-.list .btn:hover {
+.btn:hover {
   background-color: var(--color-blue);
   color: var(--white-color);
   border-color: var(--color-blue);
