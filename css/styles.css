@@ -139,26 +139,10 @@ body {
   background: var(--background-color);
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-.buttons .button {
-  width: auto;
-  height: 38px;
-  margin: 8px;
-  background-color: #F5F4FA;
-  border-color: #F5F4FA;
-=======
-.footer .link{
-=======
 .footer .link {
->>>>>>> 8eab8d8a65543ed2b45c044b96543ebd94640928
   color: var(--white-color);
-<<<<<<< HEAD
->>>>>>> 2f87d9790a4fda593aa40e5de1f973c3817b3164
-=======
   font-style: normal;
   font-weight: 400;
->>>>>>> 8eab8d8a65543ed2b45c044b96543ebd94640928
 }
 
 .footer .link-contact {
